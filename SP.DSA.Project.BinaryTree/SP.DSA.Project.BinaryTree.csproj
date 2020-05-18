@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F8FD316-337F-4F40-8C74-7B7514A85684}</ProjectGuid>
+    <ProjectGuid>{6BD9EFAD-3CAB-4E43-A4D1-68CA5595B792}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>SP.DSA.Project.BinaryTree</RootNamespace>
     <AssemblyName>SP.DSA.Project.BinaryTree</AssemblyName>
