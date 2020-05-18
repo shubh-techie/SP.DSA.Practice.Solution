@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D3448CF4-6942-4C5A-9465-E10A5F7635D3}</ProjectGuid>
+    <ProjectGuid>{7920913E-4C8C-4F3A-8A9C-016F7527C37D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BinarySearchTree</RootNamespace>
-    <AssemblyName>BinarySearchTree</AssemblyName>
+    <RootNamespace>SP.DSA.Project.BinarySearchTree</RootNamespace>
+    <AssemblyName>SP.DSA.Project.BinarySearchTree</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -25,8 +25,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.Hashing", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.LinkedList", "SP.DSA.Project.LinkedList\SP.DSA.Project.LinkedList.csproj", "{772F6FE2-25C5-462B-8FE9-5ED1F4A7CFCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.BinarySearchTree", "BinarySearchTree\SP.DSA.Project.BinarySearchTree.csproj", "{D3448CF4-6942-4C5A-9465-E10A5F7635D3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.Graph", "SP.DSA.Project.Graph\SP.DSA.Project.Graph.csproj", "{F4CF0FE0-DBE1-4186-A42C-F4DE2E02CD4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.GreedyAlgorithm", "SP.DSA.Project.GreedyAlgorithm\SP.DSA.Project.GreedyAlgorithm.csproj", "{B65A2921-9095-4C29-9246-39D5549B75FD}"
@@ -44,6 +42,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.DisjointSet", "SP.DSA.Project.DisjointSet\SP.DSA.Project.DisjointSet.csproj", "{20CDECE4-9721-4C19-93C9-492414241FF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.BinaryTree", "SP.DSA.Project.BinaryTree\SP.DSA.Project.BinaryTree.csproj", "{6BD9EFAD-3CAB-4E43-A4D1-68CA5595B792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DSA.Project.BinarySearchTree", "SP.DSA.Project.BinarySearchTree\SP.DSA.Project.BinarySearchTree.csproj", "{7920913E-4C8C-4F3A-8A9C-016F7527C37D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,10 +95,6 @@ Global
 		{772F6FE2-25C5-462B-8FE9-5ED1F4A7CFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{772F6FE2-25C5-462B-8FE9-5ED1F4A7CFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{772F6FE2-25C5-462B-8FE9-5ED1F4A7CFCE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3448CF4-6942-4C5A-9465-E10A5F7635D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3448CF4-6942-4C5A-9465-E10A5F7635D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3448CF4-6942-4C5A-9465-E10A5F7635D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3448CF4-6942-4C5A-9465-E10A5F7635D3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4CF0FE0-DBE1-4186-A42C-F4DE2E02CD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4CF0FE0-DBE1-4186-A42C-F4DE2E02CD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4CF0FE0-DBE1-4186-A42C-F4DE2E02CD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -135,6 +131,10 @@ Global
 		{6BD9EFAD-3CAB-4E43-A4D1-68CA5595B792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BD9EFAD-3CAB-4E43-A4D1-68CA5595B792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BD9EFAD-3CAB-4E43-A4D1-68CA5595B792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7920913E-4C8C-4F3A-8A9C-016F7527C37D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7920913E-4C8C-4F3A-8A9C-016F7527C37D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7920913E-4C8C-4F3A-8A9C-016F7527C37D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7920913E-4C8C-4F3A-8A9C-016F7527C37D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
