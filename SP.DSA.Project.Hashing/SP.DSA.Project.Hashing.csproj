@@ -43,8 +43,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckStringsAreAnagram.cs" />
+    <Compile Include="CheckTwoArrayEqual.cs" />
+    <Compile Include="CountDistinct.cs" />
+    <Compile Include="CountDistinctElements.cs" />
+    <Compile Include="FindDuplicatesInArray.cs" />
+    <Compile Include="FindUniqueInArray.cs" />
+    <Compile Include="FirstRepeatingElement.cs" />
+    <Compile Include="largestZeroSubarray.cs" />
+    <Compile Include="Lettersinsortedorder.cs" />
+    <Compile Include="LongestSubsequence.cs" />
+    <Compile Include="MissingNumberInArray.cs" />
+    <Compile Include="MostOccurringLetterinString.cs" />
+    <Compile Include="NumbersContaining.cs" />
+    <Compile Include="PrintNonRepeatedElements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveDuplicateFromArray.cs" />
+    <Compile Include="RGBAllSet.cs" />
+    <Compile Include="SortDigits.cs" />
+    <Compile Include="SubarraySumWithGivenValue.cs" />
+    <Compile Include="SubarraySumZero.cs" />
+    <Compile Include="SumExists.cs" />
+    <Compile Include="WordsCountInString.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

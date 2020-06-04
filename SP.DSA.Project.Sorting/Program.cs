@@ -10,6 +10,22 @@ namespace SP.DSA.Project.Sorting
     {
         static void Main(string[] args)
         {
+            //SortAnArrayZeroOneTwo.SortAnArrayZeroOneTwoDemo();
+            //SegregateEvenAndOddElements.SegregateEvenAndOddElementsDemo();
+            //SegregateNegAndPosNumbers.SegregateNegAndPosNumbersDemo();
+            //BinaryArraySorting.BinaryArraySortingDemo();
+            //FindingKthSmallestNumber.FindingKthSmallestNumberDemo();
+            //QuickSorting.QuickSortingDemo();
+            //TripletSumInArray.TripletSumInArrayDemo();
+            //BubbleSorting.BubbleSortingDemo();
+            //BasicSorting.BasicSortingDemo();
+
+
+
+            Console.WriteLine("Press <enter> to exit.");
+            Console.ReadLine();
         }
+
+
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0EAF806-AA3F-49F5-9F16-74671A49E380}</ProjectGuid>
+    <ProjectGuid>{9E1A6393-A65A-491A-9571-675F835DD33D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SP.DSA.Project.Array</RootNamespace>
-    <AssemblyName>SP.DSA.Project.Array</AssemblyName>
+    <RootNamespace>SP.DSA.Project.QueueDemo</RootNamespace>
+    <AssemblyName>SP.DSA.Project.QueueDemo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenerateBinaryNumbers.cs" />
+    <Compile Include="MaximumSubarraysSizek.cs" />
+    <Compile Include="MyQueue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseAQueue.cs" />
+    <Compile Include="ReverseFirstKQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

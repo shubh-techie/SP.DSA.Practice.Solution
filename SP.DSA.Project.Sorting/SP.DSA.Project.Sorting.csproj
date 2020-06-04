@@ -43,8 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicSorting.cs" />
+    <Compile Include="BinaryArraySorting.cs" />
+    <Compile Include="BubbleSorting.cs" />
+    <Compile Include="FindingKthSmallestNumber.cs" />
+    <Compile Include="InsertionSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickSorting.cs" />
+    <Compile Include="SegregateEvenAndOddElements.cs" />
+    <Compile Include="SegregateNegAndPosNumbers.cs" />
+    <Compile Include="SortAnArrayZeroOneTwo.cs" />
+    <Compile Include="TripletSumInArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
