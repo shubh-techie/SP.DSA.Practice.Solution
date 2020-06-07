@@ -46,6 +46,7 @@
     <Compile Include="..\SP.DSA.Project.LeetCode\Quest438FindAllAnagramsString.cs">
       <Link>Quest438FindAllAnagramsString.cs</Link>
     </Compile>
+    <Compile Include="AmazonArrayBasics.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="Equilibrium.cs" />
     <Compile Include="FindMissingNumber.cs" />
