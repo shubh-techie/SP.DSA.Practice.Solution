@@ -10,7 +10,14 @@ namespace SP.DSA.Project.ArrayDemo
     {
         public static void AmazonArrayBasicsDemo()
         {
-            SticklerThiefStart();
+            //RearrangeAnArrayStart();
+            //ContainerWithMostWaterStart();
+            //TrappingRainWaterStart();
+            //KadaneAlgorithmStart();
+            //SubarrayWithGivenSumStart();
+            //MaxIndexStart();
+            //ProductArrayPuzzleStart();
+            //SticklerThiefStart();
             //EquilibriumPointStart();
             //WaveArray();
             //MountainSubArray();
@@ -24,6 +31,234 @@ namespace SP.DSA.Project.ArrayDemo
             //MaxAndSecondMax();
             //ThirdLargestElement();
             //ReplaceZeroWithFive();
+        }
+
+        private static void RearrangeAnArrayStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 3, 2, 0, 1 });
+            arrColl.Add(new int[] { 4, 0, 2, 1, 3 });
+            arrColl.Add(new int[] { 0, 1, 2, 3 });
+            arrColl.Add(new int[] { 0, 1, 2, 3 });
+            foreach (var arr in arrColl)
+            {
+                GetUpdatedArray(arr, arr.Length);
+            }
+        }
+
+        private static void GetUpdatedArray(int[] arr, int length)
+        {
+            Console.WriteLine("Before update :" + string.Join(", ", arr));
+            for (int i = 0; i < length; i++)
+            {
+                arr[i] += (arr[arr[i]] % length) * length;
+            }
+            Console.WriteLine("After after :" + string.Join(", ", arr));
+
+            for (int i = 0; i < length; i++)
+                arr[i] /= length;
+
+            Console.WriteLine("After after :" + string.Join(", ", arr));
+            Console.WriteLine("............................");
+
+        }
+
+        private static void ContainerWithMostWaterStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 1, 5, 4, 3 });
+            arrColl.Add(new int[] { 3, 1, 2, 4, 5 });
+            foreach (var arr in arrColl)
+            {
+                Console.WriteLine("Container max water :" + GetContainerWater(arr));
+            }
+        }
+
+        private static int GetContainerWater(int[] arr)
+        {
+            int left = 0, right = arr.Length - 1, uMax = 0;
+
+            while (left < right)
+            {
+                uMax = Math.Max(uMax, Math.Min(arr[left], arr[right]) * (right - left));
+                if (arr[left] < arr[right])
+                    left++;
+                else
+                    right--;
+            }
+
+            return uMax;
+        }
+
+        private static void TrappingRainWaterStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 3, 0, 0, 2, 0, 4 });
+            arrColl.Add(new int[] { 7, 4, 0, 9 });
+            arrColl.Add(new int[] { 6, 9, 9 });
+            arrColl.Add(new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 });
+            foreach (var arr in arrColl)
+            {
+                Console.WriteLine("max water :" + GetTrappingWater(arr));
+            }
+        }
+
+        private static int GetTrappingWater(int[] arr)
+        {
+            int lmax = 0, rMax = 0, left = 0, right = arr.Length - 1, uMax = 0;
+
+            while (left <= right)
+            {
+                if (arr[left] < arr[right])
+                {
+                    if (lmax < arr[left])
+                        lmax = arr[left];
+                    else
+                        uMax += lmax - arr[left];
+
+                    left++;
+                }
+                else
+                {
+                    if (rMax < arr[right])
+                        rMax = arr[right];
+                    else
+                        uMax += rMax - arr[right];
+
+                    right--;
+                }
+            }
+
+            return uMax;
+        }
+
+        private static void KadaneAlgorithmStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 1, 2, 3, -2, 5 });
+            arrColl.Add(new int[] { -1, -2, -3, -4 });
+
+            foreach (var arr in arrColl)
+            {
+                Console.WriteLine("Max sum :" + GetMaximumSum(arr));
+            }
+        }
+
+        private static int GetMaximumSum(int[] arr)
+        {
+            int lMax = arr[0], uMax = arr[0];
+            for (int i = 1; i < arr.Length; i++)
+            {
+                lMax = Math.Max(lMax + arr[i], arr[i]);
+                uMax = Math.Max(lMax, uMax);
+            }
+
+            return uMax;
+        }
+
+        private static void SubarrayWithGivenSumStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 1, 2, 3, 7, 5 });
+            arrColl.Add(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+            arrColl.Add(new int[] { 5, 7, 1, 2 });
+            int[] sum = { 12, 15, 15 };
+            for (int i = 0; i < 3; i++)
+            {
+                subarraySumHelper(arrColl[i], sum[i]);
+            }
+        }
+
+        private static void subarraySumHelper(int[] arr, int sum)
+        {
+            int start = 0, size = arr.Length, currSum = 0;
+            bool isFound = false;
+            for (int i = 0; i < size; i++)
+            {
+                currSum += arr[i];
+                while (currSum > sum && start < i)
+                {
+                    currSum -= arr[start];
+                    start++;
+                }
+
+                if (currSum == sum)
+                {
+                    int startPistion = start + 1;
+                    int endPosition = i + 1;
+                    Console.WriteLine("start: {0}, end: {1}", startPistion, endPosition);
+                    isFound = true;
+                    break;
+                }
+            }
+
+            if (!isFound)
+                Console.WriteLine("There is no such sub array.");
+
+        }
+
+        private static void MaxIndexStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 1, 10 });
+            arrColl.Add(new int[] { 34, 8, 10, 3, 2, 80, 30, 33, 1 });
+            arrColl.Add(new int[] { 9, 2, 3, 4, 5, 6, 7, 8, 18, 0 });
+            arrColl.Add(new int[] { 1, 2, 3, 4, 5, 6 });
+            arrColl.Add(new int[] { 6, 5, 4, 3, 2, 1 });
+            foreach (var arr in arrColl)
+            {
+                Console.WriteLine("max Index " + GetMaxIndex(arr, arr.Length));
+            }
+        }
+
+        private static int GetMaxIndex(int[] arr, int length)
+        {
+            int index = -1;
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = i + 1; j < length; j++)
+                {
+                    if (arr[j] > arr[i])
+                    {
+                        index = Math.Max(j - i, index);
+                    }
+                }
+            }
+
+            return index;
+        }
+
+        private static void ProductArrayPuzzleStart()
+        {
+            List<int[]> arrColl = new List<int[]>();
+            arrColl.Add(new int[] { 10, 3, 5, 6, 2 });
+            arrColl.Add(new int[] { 12, 0 });
+
+            foreach (var arr in arrColl)
+            {
+                int[] output = GetproductArray(arr);
+            }
+        }
+
+        private static int[] GetproductArray(int[] arr)
+        {
+            int uPro = 1, size = arr.Length;
+            for (int i = 0; i < size; i++)
+            {
+                if (arr[i] != 0)
+                    uPro *= arr[i];
+            }
+
+            int[] output = new int[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                output[i] = (int)(uPro * Math.Pow(arr[i], -1));
+            }
+
+            Console.WriteLine("Here is output :" + string.Join(", ", output));
+
+            return output;
         }
 
         private static void SticklerThiefStart()

@@ -21,27 +21,30 @@ namespace SP.DSA.Project.QueueDemo
     }
     public class MyQueue
     {
-        int Front, Rear, Count;
+        int Front, Rear;
         int Capacity;
         int[] Arr;
 
+        public int Size { get; set; }
         public MyQueue(int capacity)
         {
             this.Capacity = capacity;
-            this.Front = this.Count = 0;
+            this.Front = this.Size = 0;
             this.Rear = this.Capacity - 1;
             this.Arr = new int[this.Capacity];
         }
 
+
         public bool isFull()
         {
-            return this.Count == this.Capacity;
+            return this.Size == this.Capacity;
         }
 
         public bool IsEmpty()
         {
-            return this.Count == 0;
+            return this.Size == 0;
         }
+
 
         public void Enqueue(int val)
         {
@@ -49,7 +52,7 @@ namespace SP.DSA.Project.QueueDemo
                 throw new Exception("Queue is Full.");
             this.Rear = (this.Rear + 1) % this.Capacity;
             this.Arr[this.Rear] = val;
-            this.Count++;
+            this.Size++;
             Console.WriteLine(val + "item isnserted.");
         }
         public int Dequeue()
@@ -58,7 +61,7 @@ namespace SP.DSA.Project.QueueDemo
                 throw new Exception("Queue is empty.");
             int item = Arr[this.Front];
             this.Front = (this.Front + 1) % this.Capacity;
-            this.Count--;
+            this.Size--;
             return item;
         }
     }

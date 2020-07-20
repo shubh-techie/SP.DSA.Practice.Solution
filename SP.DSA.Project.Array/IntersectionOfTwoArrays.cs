@@ -10,14 +10,14 @@ namespace SP.DSA.Project.ArrayDemo
     {
         public static void IntersectionOfTwoArraysDemo()
         {
-            int[] arr1 = { 89, 24, 75, 11, 23 };
-            int[] arr2 = { 89, 2, 4 };
+            //int[] arr1 = { 89, 24, 75, 11, 23 };
+            //int[] arr2 = { 89, 2, 4 };
 
             //int[] arr1 = { 1, 2 ,3 ,4 ,5, 6 };
             //int[] arr2 = { 3 ,4 ,5 ,6 ,7 };
 
-            //int[] arr1 = { 10, 10, 10 };
-            //int[] arr2 = { 10, 10, 10 };
+            int[] arr1 = { 10, 10, 10 };
+            int[] arr2 = { 10, 10, 10 };
 
             List<int> result = GetIntersectionOfTwoArrays(arr1, arr2);
             Console.WriteLine(string.Join(",", result));
@@ -35,8 +35,11 @@ namespace SP.DSA.Project.ArrayDemo
 
             foreach (var item in arr2)
             {
-                if (set.Contains(item) && !result.Contains(item))
+                if (set.Contains(item))
+                {
                     result.Add(item);
+                    set.Remove(item);
+                }
             }
 
             return result;

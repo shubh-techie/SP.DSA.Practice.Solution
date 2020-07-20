@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoinChange.cs" />
+    <Compile Include="EqualPartitionProblem.cs" />
+    <Compile Include="KnapsackProblem01.cs" />
+    <Compile Include="LongestCommonSubsequence.cs" />
+    <Compile Include="MinimumCoins.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubsetSumProblem.cs" />
+    <Compile Include="SubsetSumsIsMinimum.cs" />
+    <Compile Include="TotalSubSetSum.cs" />
+    <Compile Include="UnboundedCoinChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

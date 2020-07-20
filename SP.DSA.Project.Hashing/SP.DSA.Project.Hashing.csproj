@@ -50,6 +50,7 @@
     <Compile Include="FindDuplicatesInArray.cs" />
     <Compile Include="FindUniqueInArray.cs" />
     <Compile Include="FirstRepeatingElement.cs" />
+    <Compile Include="HashingSolutionLevelOne.cs" />
     <Compile Include="largestZeroSubarray.cs" />
     <Compile Include="Lettersinsortedorder.cs" />
     <Compile Include="LongestSubsequence.cs" />

@@ -10,6 +10,13 @@ namespace SP.DSA.Project.LinkedList
     {
         static void Main(string[] args)
         {
+            //LRUCacheDemo.LRUCacheDemoStart();
+            //SingleLinkedListDemo.SingleLinkedListDemoStart();
+            //DoubleLinkedListDemo.DoubleLinkedListDemoStart();
+            LinkedListUtility.LinkedListUtilityDemo();
+
+            Console.WriteLine("Please press <enter> to exit.");
+            Console.ReadLine();
         }
     }
 }

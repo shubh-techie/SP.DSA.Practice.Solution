@@ -48,13 +48,19 @@
     <Compile Include="BubbleSorting.cs" />
     <Compile Include="FindingKthSmallestNumber.cs" />
     <Compile Include="InsertionSort.cs" />
+    <Compile Include="KthSmallest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickSorting.cs" />
     <Compile Include="SegregateEvenAndOddElements.cs" />
     <Compile Include="SegregateNegAndPosNumbers.cs" />
+    <Compile Include="SegregateThreeNumbers.cs" />
+    <Compile Include="SolutionSetTwo.cs" />
     <Compile Include="SortAnArrayZeroOneTwo.cs" />
+    <Compile Include="SortingPracticeOne.cs" />
+    <Compile Include="TripletsSumZero.cs" />
     <Compile Include="TripletSumInArray.cs" />
+    <Compile Include="UnionTwoSortedArrays.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

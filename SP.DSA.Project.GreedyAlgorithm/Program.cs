@@ -10,6 +10,13 @@ namespace SP.DSA.Project.GreedyAlgorithm
     {
         static void Main(string[] args)
         {
+            //ActivitySelectionProblem.ActivitySelectionProblemDemo();
+            //CoinChange.CoinChangeDemo();
+            //KnapsackFractional.KnapsackFractionalDemo();
+            //JobSequencingProblem.JobSequencingProblemDemo();
+
+            Console.WriteLine("please enter to exit");
+            Console.ReadLine();
         }
     }
 }

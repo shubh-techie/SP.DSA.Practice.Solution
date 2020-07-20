@@ -56,5 +56,27 @@ namespace SP.DSA.Project.BinaryTree
                 Console.WriteLine();
             }
         }
+
+        public static void BFSTraverSalSolutionNaive(TreeNode root)
+        {
+            if (root == null)
+                return;
+
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            queue.Enqueue(root);
+            TreeNode currNode = null;
+            while (queue.Count > 0)
+            {
+                currNode = queue.Dequeue();
+                if (currNode != null)
+                {
+                    Console.Write(currNode.Data + " ");
+                    if (currNode.Left != null)
+                        queue.Enqueue(currNode.Left);
+                    if (currNode.Right != null)
+                        queue.Enqueue(currNode.Right);
+                }
+            }
+        }
     }
 }

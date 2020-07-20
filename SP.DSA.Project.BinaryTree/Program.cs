@@ -11,10 +11,16 @@ namespace SP.DSA.Project.BinaryTree
         static void Main(string[] args)
         {
             TreeNode root = GetTreeRoot();
-            Console.WriteLine("Children parents {0}", BTCoreUtility.ChildrenSumParent(root));
 
+            ShowAllTraversal(root);
 
+            //Console.WriteLine("Children parents {0}", BTCoreUtility.ChildrenSumParent(root));
+            //Console.WriteLine("is balance Tree parents {0}", BTCoreUtility.IsBalanceTree(root));
+            //BTCoreUtility.PrintRightViewBFS(root);
+            //Console.WriteLine("Common Ansetor :" + BTCoreUtility.LCA(root, 40, 70).Data);
+            //Console.WriteLine("Diameter of htis tree :" + BTCoreUtility.GetDiameterOFBinaryTree(root));
 
+            //Console.WriteLine("Width of this array is :" + BTCoreUtility.GetMaxWidthRec(root));
             //Console.WriteLine("print left view");
             //Console.WriteLine();
             //BTCoreUtility.PrintAllLeftView(root);
@@ -27,10 +33,14 @@ namespace SP.DSA.Project.BinaryTree
             //Console.WriteLine();
             //BTCoreUtility.PrintAllLeftViewUsingBFS(root);
 
+            //Console.WriteLine("spiral printing using stack");
+            //BTCoreUtility.PrintSprialUsingTwoStack(root);
 
+            //Console.WriteLine("Spiral Traversal");
+            //BTCoreUtility.PrintSpiral(root);
 
-            Console.WriteLine("Level traversal");
-            BFSTraversalUtility.BFSTraverSal(root);
+            //Console.WriteLine("Level traversal");
+            //BFSTraversalUtility.BFSTraverSal(root);
             //ShowAllTraversal(root);
             //Console.WriteLine("height of the tree  : {0}", BTCoreUtility.GetHeightOfBinaryTree(root));
             //Console.WriteLine("is identical : {0}", BTCoreUtility.IsIdentical(root, root));
@@ -51,35 +61,42 @@ namespace SP.DSA.Project.BinaryTree
 
         private static void ShowAllTraversal(TreeNode root)
         {
-            Console.WriteLine("PreOrderIterative(root) traversal...");
-            Console.WriteLine();
-            //DFSTraversalUtility.PreOrderIterative(root);
-
+            Console.WriteLine("===============================================");
             Console.WriteLine("preorder traversal...");
-            Console.WriteLine();
             DFSTraversalUtility.PreOrder(root);
 
-            Console.WriteLine("preorder traversal...");
-            Console.WriteLine();
+            Console.WriteLine("PreOrderIterative(root) traversal...");
+            DFSTraversalUtility.PreOrderIterative(root);
+
+            Console.WriteLine("===============================================");
+            Console.WriteLine("InOrder traversal...");
             DFSTraversalUtility.InOrder(root);
 
+            Console.WriteLine("InOrderIterative (root) traversal...");
+            DFSTraversalUtility.InOrderIterative(root);
+
+            Console.WriteLine("===============================================");
             Console.WriteLine("preorder traversal...");
-            Console.WriteLine();
             DFSTraversalUtility.PostOrder(root);
+
+            Console.WriteLine("PostOrderIterative(root) traversal...");
+            DFSTraversalUtility.PostOrderIterative(root);
+            Console.WriteLine();
         }
 
         private static TreeNode GetTreeRoot()
         {
-            TreeNode root = new TreeNode(30)
+            TreeNode root = new TreeNode(10)
             {
-                Left = new TreeNode(10),
-                Right = new TreeNode(20)
+                Left = new TreeNode(20),
+                Right = new TreeNode(30)
             };
 
-            root.Left.Left = new TreeNode(6);
-            root.Left.Right = new TreeNode(4);
+            root.Left.Left = new TreeNode(40);
+            root.Left.Right = new TreeNode(50);
 
-            root.Right.Right = new TreeNode(20);
+            root.Right.Left = new TreeNode(60);
+            root.Right.Right = new TreeNode(70);
 
             return root;
         }

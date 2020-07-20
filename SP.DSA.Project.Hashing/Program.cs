@@ -10,7 +10,8 @@ namespace SP.DSA.Project.Hashing
     {
         static void Main(string[] args)
         {
-            CountDistinctElements.CountDistinctElementsDemo();
+            HashingSolutionLevelOne.HashingSolutionLevelOneStart();
+            //CountDistinctElements.CountDistinctElementsDemo();
             //LongestSubsequence.LongestSubsequenceDemo();
             //largestZeroSubarray.largestZeroSubarrayDemo();
             //SubarraySumWithGivenValue.SubarraySumWithGivenValueDemo();

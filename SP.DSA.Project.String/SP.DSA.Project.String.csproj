@@ -48,6 +48,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringBasics.cs" />
+    <Compile Include="StringPracticeSolutionOne.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

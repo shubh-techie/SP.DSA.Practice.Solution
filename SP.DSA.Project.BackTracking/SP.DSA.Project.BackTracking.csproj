@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Permutation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueenProblem.cs" />
+    <Compile Include="RatMaze.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

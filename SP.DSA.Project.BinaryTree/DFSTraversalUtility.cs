@@ -10,11 +10,7 @@ namespace SP.DSA.Project.BinaryTree
     {
         public static void PreOrder(TreeNode root)
         {
-            if (root == null)
-            {
-                Console.Write("NULL" + " ");
-            }
-            else
+            if (root != null)
             {
                 Console.Write(root.Data + " ");
                 PreOrder(root.Left);
@@ -24,11 +20,7 @@ namespace SP.DSA.Project.BinaryTree
 
         public static void InOrder(TreeNode root)
         {
-            if (root == null)
-            {
-                Console.Write("NULL" + " ");
-            }
-            else
+            if (root != null)
             {
                 InOrder(root.Left);
                 Console.Write(root.Data + " ");
@@ -38,11 +30,7 @@ namespace SP.DSA.Project.BinaryTree
 
         public static void PostOrder(TreeNode root)
         {
-            if (root == null)
-            {
-                Console.Write("NULL" + " ");
-            }
-            else
+            if (root != null)
             {
                 PostOrder(root.Left);
                 PostOrder(root.Right);
@@ -50,31 +38,74 @@ namespace SP.DSA.Project.BinaryTree
             }
         }
 
+        public static void PostOrderIterative(TreeNode root)
+        {
+            if (root != null)
+            {
+                Stack<TreeNode> track = new Stack<TreeNode>();
+                List<int> output = new List<int>();
+                TreeNode currNode = root;
+                while (currNode != null || track.Count > 0)
+                {
+                    if (currNode != null)
+                    {
+                        output.Add(currNode.Data);
+                        track.Push(currNode);
+                        currNode = currNode.Right;
+                    }
+                    else
+                    {
+                        currNode = track.Pop().Left;
+                    }
+                }
+
+                output.Reverse();
+
+                Console.WriteLine(string.Join(", ", output));
+            }
+        }
+
         public static void PreOrderIterative(TreeNode root)
         {
-            if (root == null)
+            if (root != null)
             {
-                Console.WriteLine("There is no item to display.");
-                return;
-            }
-
-            Stack<TreeNode> track = new Stack<TreeNode>();
-            TreeNode tempNode = root;
-            while (tempNode != null || track.Count > 0)
-            {
-                Console.WriteLine(tempNode.Data);
-                if (tempNode.Left != null)
+                Stack<TreeNode> track = new Stack<TreeNode>();
+                TreeNode currNode = root;
+                while (currNode != null || track.Count > 0)
                 {
-                    tempNode = tempNode.Left;
-                    if (tempNode.Right != null)
-                        track.Push(tempNode.Right);
+                    if (currNode != null)
+                    {
+                        Console.Write(currNode.Data + " ");
+                        track.Push(currNode);
+                        currNode = currNode.Left;
+                    }
+                    else
+                    {
+                        currNode = track.Pop().Right;
+                    }
                 }
-                else
+            }
+        }
+
+        public static void InOrderIterative(TreeNode root)
+        {
+            if (root != null)
+            {
+                Stack<TreeNode> track = new Stack<TreeNode>();
+                TreeNode currNode = root;
+                while (currNode != null || track.Count > 0)
                 {
-                    tempNode = track.Pop();
-                    tempNode = tempNode.Left;
-                    if (tempNode.Right != null)
-                        track.Push(tempNode.Right);
+                    if (currNode != null)
+                    {
+                        track.Push(currNode);
+                        currNode = currNode.Left;
+                    }
+                    else if (track.Count > 0)
+                    {
+                        currNode = track.Pop();
+                        Console.Write(currNode.Data + " ");
+                        currNode = currNode.Right;
+                    }
                 }
             }
         }

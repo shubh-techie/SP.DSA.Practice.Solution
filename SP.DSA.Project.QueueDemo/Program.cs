@@ -10,7 +10,8 @@ namespace SP.DSA.Project.QueueDemo
     {
         static void Main(string[] args)
         {
-            MaximumSubarraysSizek.MaximumSubarraysSizekDemo();
+            //PracticeSetDemoOne.PracticeSetDemoOneStart();
+            //MaximumSubarraysSizek.MaximumSubarraysSizekDemo();
             //ReverseFirstKQueue.ReverseFirstKQueueDemo();
             // GenerateBinaryNumbers.GenerateBinaryNumbersDemo();
             //ReverseAQueue.ReverseAQueueDemo();

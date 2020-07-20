@@ -10,7 +10,8 @@ namespace SP.DSA.Project.ArrayDemo
     {
         static void Main(string[] args)
         {
-            AmazonArrayBasics.AmazonArrayBasicsDemo();
+            AmazonSolutionSetOne.AmazonSolutionSetOneDemo();
+            //AmazonArrayBasics.AmazonArrayBasicsDemo();
             //MergeTwoSortedLists.MergerTwoSortedListDemo();
             //FrequenciesArrayElements.FrequenciesArrayElementsDemo();
             //IntersectionOfTwoArrays.IntersectionOfTwoArraysDemo();

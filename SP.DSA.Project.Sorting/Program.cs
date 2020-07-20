@@ -10,6 +10,8 @@ namespace SP.DSA.Project.Sorting
     {
         static void Main(string[] args)
         {
+            SolutionSetTwo.SolutionSetTwoDemo();
+
             //SortAnArrayZeroOneTwo.SortAnArrayZeroOneTwoDemo();
             //SegregateEvenAndOddElements.SegregateEvenAndOddElementsDemo();
             //SegregateNegAndPosNumbers.SegregateNegAndPosNumbersDemo();
@@ -19,8 +21,12 @@ namespace SP.DSA.Project.Sorting
             //TripletSumInArray.TripletSumInArrayDemo();
             //BubbleSorting.BubbleSortingDemo();
             //BasicSorting.BasicSortingDemo();
+            //SortingPracticeOne.SortingPracticeOneStart();
+            //UnionTwoSortedArrays.UnionTwoSortedArraysDemo();
+            //TripletsSumZero.TripletsSumZeroDemo();
+            //SegregateThreeNumbers.SegregateThreeNumbersDemo();
 
-
+            //KthSmallest.KthSmallestDemo();
 
             Console.WriteLine("Press <enter> to exit.");
             Console.ReadLine();

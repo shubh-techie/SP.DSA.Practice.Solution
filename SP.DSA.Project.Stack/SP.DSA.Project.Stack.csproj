@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemovingConsecutiveDuplicates.cs" />
     <Compile Include="StackDemo.cs" />
+    <Compile Include="StackSolutionDemo.cs" />
     <Compile Include="StockSpanProblem.cs" />
   </ItemGroup>
   <ItemGroup>

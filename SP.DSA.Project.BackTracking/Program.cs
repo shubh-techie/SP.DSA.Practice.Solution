@@ -10,6 +10,14 @@ namespace SP.DSA.Project.BackTracking
     {
         static void Main(string[] args)
         {
+            //Permutation.PermutationDemo();
+            //RatMaze.RatMazeDemo();
+
+
+
+
+            Console.WriteLine("Please enter to exit");
+            Console.ReadLine();
         }
     }
 }

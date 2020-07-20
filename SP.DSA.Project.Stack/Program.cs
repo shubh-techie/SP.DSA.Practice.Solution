@@ -10,6 +10,7 @@ namespace SP.DSA.Project.Stack
     {
         static void Main(string[] args)
         {
+            StackSolutionDemo.StackSolutionMain();
             //RemovingConsecutiveDuplicates.RemovingConsecutiveDuplicatesDemo();
             //OperationsOnStack.OperationsOnStackDemo();
             //MyStackQueue.MyStackQueueStart();
@@ -18,7 +19,7 @@ namespace SP.DSA.Project.Stack
             //LargestHistogram.LargestHistogramDemo();
             //NextGreaterElement.NextGreaterElementDemo();
             //PreviousGreaterElement.PreviousGreaterElementDemo();
-            StockSpanProblem.StockSpanProblemDemo();
+            //StockSpanProblem.StockSpanProblemDemo();
             //BalancedParentheses.BalancedParenthesesDemo();
             //MyStackDemo.MyStackDemoHelper();
             //BasicOperation();

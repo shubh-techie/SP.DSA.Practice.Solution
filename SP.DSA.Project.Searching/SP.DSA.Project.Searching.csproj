@@ -43,14 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonSearchingSolutionSet.cs" />
     <Compile Include="CountOnes.cs" />
     <Compile Include="FindSquerRoot.cs" />
     <Compile Include="LeftIndexOfNumber.cs" />
     <Compile Include="MajorityElement.cs" />
+    <Compile Include="MedianOfTwoSortedArrays.cs" />
     <Compile Include="PeakElement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchElementInAnArray.cs" />
+    <Compile Include="SearchProblem.cs" />
+    <Compile Include="SearchSolutionSetOne.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

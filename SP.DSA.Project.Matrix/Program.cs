@@ -10,10 +10,11 @@ namespace SP.DSA.Project.Matrix
     {
         static void Main(string[] args)
         {
+            //PracticeSetOneMatrix.PracticeSetOneMatrixStart();
             //MatrixDemoUsingList.MatrixDemoUsingListDemo();
             //MatrixDemo.MatrixDemoStart();
             //MatrixInSnakePattern.MatrixInSnakePatternDemo();
-            TransposeMatrix.TransposeMatrixDemo();
+            //TransposeMatrix.TransposeMatrixDemo();
 
             Console.WriteLine("press <enter> to exit");
             Console.ReadLine();
