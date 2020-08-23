@@ -47,7 +47,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueenProblem.cs" />
+    <Compile Include="QueenSolutionChess.cs" />
     <Compile Include="RatMaze.cs" />
+    <Compile Include="SudokuProblem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

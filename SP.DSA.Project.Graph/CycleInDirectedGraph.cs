@@ -12,17 +12,19 @@ namespace SP.DSA.Project.Graph
         {
             MyGraph graph = new MyGraph(6);
             graph.AddEdges(0, 1);
-            graph.AddEdges(2, 1);
-            graph.AddEdges(2, 3);
-            graph.AddEdges(3, 4);
-            graph.AddEdges(4, 5);
-            graph.AddEdges(5, 3);
+            //graph.AddEdges(2, 1);
+            //graph.AddEdges(2, 3);
+            //graph.AddEdges(3, 4);
+            //graph.AddEdges(4, 5);
+            //graph.AddEdges(5, 3);
 
             graph.PrintGraph();
 
             bool output = HasCycleInGraph(graph.AdjacencyList, graph.Vertix_Count);
             Console.WriteLine("cycle found :" + output);
         }
+
+
 
         private static bool HasCycleInGraph(List<List<int>> adjacencyList, int vertix_Count)
         {
@@ -40,19 +42,19 @@ namespace SP.DSA.Project.Graph
 
         private static bool HasCycleInGraphHelper(List<List<int>> adjacencyList, int vertex, HashSet<int> visited, HashSet<int> trackPath)
         {
+            if (trackPath.Contains(vertex))
+                return true;
+            if (visited.Contains(vertex))
+                return false;
+
             visited.Add(vertex);
             trackPath.Add(vertex);
             foreach (var neigh in adjacencyList[vertex])
             {
-                if (!visited.Contains(neigh) && HasCycleInGraphHelper(adjacencyList, neigh, visited, trackPath))
-                {
+                if (HasCycleInGraphHelper(adjacencyList, neigh, visited, trackPath))
                     return true;
-                }
-                else if (trackPath.Contains(neigh))
-                {
-                    return true;
-                }
             }
+
             trackPath.Remove(vertex);
             return false;
         }

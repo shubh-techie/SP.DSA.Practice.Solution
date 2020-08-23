@@ -12,7 +12,11 @@ namespace SP.DSA.Project.Heap
         static void Main(string[] args)
         {
 
-            HeapSorting.HeapSortingDemo();
+            DemoMinHeapAsPriorityQueue.Demo();
+            //PriorityQueueDemo.Demo();
+            //HeapSortingExample.HeapSortingDemo();
+            //MyMinHeapDemo.Demo();
+            //HeapSorting.HeapSortingDemo();
 
 
 

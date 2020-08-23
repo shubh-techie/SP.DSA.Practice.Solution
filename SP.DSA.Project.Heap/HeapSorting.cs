@@ -19,32 +19,26 @@ namespace SP.DSA.Project.Heap
         public static void HeapSort(int[] arr, int n)
         {
             BuildHeap(arr, arr.Length);
-
             for (int i = n - 1; i >= 0; i--)
             {
                 Swapping(arr, i, 0);
-                BottomDownHeapify(arr, i, 0);
+                MaxHeapify(arr, i, 0);
             }
         }
 
-        private static void BottomDownHeapify(int[] arr, int length, int i)
+        private static void MaxHeapify(int[] arr, int length, int i)
         {
             int largest = i, left = 2 * i + 1, right = 2 * i + 2;
 
             if (left < length && arr[left] > arr[largest])
-            {
                 largest = left;
-            }
-
             if (right < length && arr[right] > arr[largest])
-            {
                 largest = right;
-            }
 
             if (largest != i)
             {
                 Swapping(arr, i, largest);
-                BottomDownHeapify(arr, length, largest);
+                MaxHeapify(arr, length, largest);
             }
         }
 
@@ -59,27 +53,9 @@ namespace SP.DSA.Project.Heap
         {
             for (int i = (length - 2) / 2; i >= 0; i--)
             {
-                BottomUPHeapify(arr, length, i);
+                MaxHeapify(arr, length, i);
             }
         }
 
-        private static void BottomUPHeapify(int[] arr, int length, int i)
-        {
-            int largest = i;
-            int left = 2 * i + 1, right = 2 * i + 2;
-
-            if (left < length && arr[left] > arr[largest])
-                largest = left;
-            if (right < length && arr[right] > arr[largest])
-                largest = right;
-
-            if (largest != i)
-            {
-                int temp = arr[largest];
-                arr[largest] = arr[i];
-                arr[i] = temp;
-                BottomUPHeapify(arr, length, largest);
-            }
-        }
     }
 }

@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Heap.cs" />
     <Compile Include="HeapSorting.cs" />
+    <Compile Include="HeapSortingExample.cs" />
     <Compile Include="MinHeap.cs" />
+    <Compile Include="MyMinHeap.cs" />
+    <Compile Include="PriorityQueueDemo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

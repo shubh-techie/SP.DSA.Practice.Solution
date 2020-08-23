@@ -13,7 +13,7 @@ namespace SP.DSA.Project.ArrayDemo
             //RearrangeAnArrayStart();
             //ContainerWithMostWaterStart();
             //TrappingRainWaterStart();
-            //KadaneAlgorithmStart();
+            KadaneAlgorithmStart();
             //SubarrayWithGivenSumStart();
             //MaxIndexStart();
             //ProductArrayPuzzleStart();

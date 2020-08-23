@@ -43,9 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ques139WordBreak.cs" />
+    <Compile Include="Ques1429FirstUniqueNumber.cs" />
+    <Compile Include="Ques198HouseRobber.cs" />
+    <Compile Include="Ques200NumberOfIslands.cs" />
+    <Compile Include="Ques207CourseSchedule.cs" />
+    <Compile Include="Ques212WordSearchII.cs" />
+    <Compile Include="Ques227BasicCalculatorII.cs" />
+    <Compile Include="Ques380InsertDeleteGetRandom.cs" />
+    <Compile Include="Ques675CutOffTreesforGolfEvent.cs" />
+    <Compile Include="Ques692TopKFrequentWords.cs" />
+    <Compile Include="AmazonOnlinePractice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ques1089DuplicateZeros.cs" />
+    <Compile Include="Ques1268SearchSuggestionsSystem.cs" />
     <Compile Include="Ques1295FindEvenNumberDigits.cs" />
     <Compile Include="Ques1370IncreasingDecreasingString.cs" />
     <Compile Include="Ques152MaximumProductSubarray.cs" />
@@ -62,8 +74,14 @@
     <Compile Include="Ques371SumOfTwoIntegers.cs" />
     <Compile Include="Ques3LongestSubstring.cs" />
     <Compile Include="Ques485MaxConsecutiveOnes.cs" />
+    <Compile Include="Ques56MergeIntervals.cs" />
+    <Compile Include="Ques694NumberDistinctIslands.cs" />
+    <Compile Include="Ques763PartitionLabels.cs" />
     <Compile Include="Ques819MostCommonWord.cs" />
     <Compile Include="Ques862ShortestSubarraySumK.cs" />
+    <Compile Include="Ques863AllNodesDistanceKinBinaryTree.cs" />
+    <Compile Include="Ques937ReorderDataLogFiles.cs" />
+    <Compile Include="Ques973KClosestPointsOrigin.cs" />
     <Compile Include="Ques977SquaresSortedArray.cs" />
     <Compile Include="Quest1299ReplaceRightMax.cs" />
     <Compile Include="Quest414ThirdMaximumNumber.cs" />

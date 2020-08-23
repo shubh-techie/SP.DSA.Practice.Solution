@@ -45,18 +45,16 @@ namespace SP.DSA.Project.Graph
 
         private static bool HasInCycleGraphHelper(List<List<int>> adjacencyList, int source, HashSet<int> visitedSet, int parent)
         {
+            if (visitedSet.Contains(source))
+                return false;
+
+            if (source != parent)
+                return true;
+
             visitedSet.Add(source);
-            Console.Write("=> " + source);
             foreach (var neigh in adjacencyList[source])
             {
-                if (!visitedSet.Contains(neigh))
-                {
-                    if (HasInCycleGraphHelper(adjacencyList, neigh, visitedSet, source))
-                    {
-                        return true;
-                    }
-                }
-                else if (neigh != parent)
+                if (HasInCycleGraphHelper(adjacencyList, neigh, visitedSet, source))
                 {
                     return true;
                 }

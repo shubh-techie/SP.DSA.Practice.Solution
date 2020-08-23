@@ -10,10 +10,11 @@ namespace SP.DSA.Project.BinaryTree
     {
         static void Main(string[] args)
         {
-            TreeNode root = GetTreeRoot();
+            BinaryTreeSolutionSetOne.BinaryTreeSolutionSetOneStart();
 
-            ShowAllTraversal(root);
 
+            //TreeNode root = GetTreeRoot();
+            //ShowAllTraversal(root);
             //Console.WriteLine("Children parents {0}", BTCoreUtility.ChildrenSumParent(root));
             //Console.WriteLine("is balance Tree parents {0}", BTCoreUtility.IsBalanceTree(root));
             //BTCoreUtility.PrintRightViewBFS(root);
@@ -55,6 +56,7 @@ namespace SP.DSA.Project.BinaryTree
             //Console.WriteLine("level order Solution...");
             //BFSTraversalUtility.BFSTraverSalSolution2(root);
 
+            Console.WriteLine();
             Console.WriteLine("Please press <enter> to exit.");
             Console.ReadLine();
         }

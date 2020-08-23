@@ -10,8 +10,9 @@ namespace SP.DSA.Project.Sorting
     {
         static void Main(string[] args)
         {
-            SolutionSetTwo.SolutionSetTwoDemo();
+            MedianNumber.FindMedianSortedArrays();
 
+            //SolutionSetTwo.SolutionSetTwoDemo();
             //SortAnArrayZeroOneTwo.SortAnArrayZeroOneTwoDemo();
             //SegregateEvenAndOddElements.SegregateEvenAndOddElementsDemo();
             //SegregateNegAndPosNumbers.SegregateNegAndPosNumbersDemo();

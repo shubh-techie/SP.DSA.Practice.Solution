@@ -10,7 +10,7 @@ namespace SP.DSA.Project.Hashing
     {
         static void Main(string[] args)
         {
-            HashingSolutionLevelOne.HashingSolutionLevelOneStart();
+            //HashingSolutionLevelOne.HashingSolutionLevelOneStart();
             //CountDistinctElements.CountDistinctElementsDemo();
             //LongestSubsequence.LongestSubsequenceDemo();
             //largestZeroSubarray.largestZeroSubarrayDemo();
@@ -29,7 +29,7 @@ namespace SP.DSA.Project.Hashing
             //Lettersinsortedorder.GerShortedStringDemo();
             //MissingNumberInArray.MissingNumberInArrayDemo();
             //RGBAllSet.RGBSetDemo();
-            //WordsCountInString.WordsCountInStringDemo();
+            WordsCountInString.WordsCountInStringDemo();
             //RemoveDuplicateFromArray.RemoveDuplicateFromArrayDemo();
             //FindUniqueInArray.PrintUniqueDemo();
 

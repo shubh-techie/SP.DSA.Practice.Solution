@@ -10,9 +10,10 @@ namespace SP.DSA.Project.Graph
     {
         static void Main(string[] args)
         {
+            //MyDemoGraph.Demo();
             //TopologicalSortingKahnAlgo.TopologicalSortingKahnAlgoDemo();
             //ShortestPath.ShortestPathDemo();
-            //CycleInDirectedGraph.CycleInDirectedGraphStart();
+            CycleInDirectedGraph.CycleInDirectedGraphStart();
             //DeductCycleInGraph.DeductCycleInGraphDemo();
             //NoOfIsLand.GetNoOfIsLandStart();
             //GraphDemo.GraphDemoStart();

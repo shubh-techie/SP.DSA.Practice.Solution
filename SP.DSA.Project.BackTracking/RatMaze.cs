@@ -28,7 +28,7 @@ namespace SP.DSA.Project.BackTracking
             {
                 Console.WriteLine(string.Join(", ", maze[i]));
             }
-            Console.WriteLine(" is path found :" + IsValidMaze(maze, Solution));
+            Console.WriteLine(" is path found :" + IsValidMazeDemo(maze));
 
             Console.WriteLine("Output");
             for (int i = 0; i < maze.Length; i++)
@@ -40,6 +40,31 @@ namespace SP.DSA.Project.BackTracking
             {
                 Console.WriteLine(string.Join(", ", Solution[i]));
             }
+        }
+
+        public static bool IsValidMazeDemo(int[][] maze)
+        {
+            return MazeHelper(maze, 0, 0, maze.Length, maze[0].Length);
+        }
+
+        private static bool MazeHelper(int[][] maze, int i, int j, int rows, int cols)
+        {
+            if (i == rows - 1 && j == cols - 1 && maze[i][j] == 1) return true;
+            if (isSafe(maze, i, j, rows, cols))
+            {
+                maze[i][j] = 2;
+                if (MazeHelper(maze, i + 1, j, rows, cols))
+                    return true;
+                else if (MazeHelper(maze, i, j + 1, rows, cols))
+                    return true;
+                maze[i][j] = 1;
+            }
+            return false;
+        }
+
+        private static bool isSafe(int[][] maze, int i, int j, int rows, int cols)
+        {
+            return i >= 0 && j >= 0 && i < rows && j < cols && maze[i][j] == 1;
         }
 
         private static bool IsValidMaze(int[][] maze, int[][] solution)

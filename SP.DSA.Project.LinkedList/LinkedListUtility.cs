@@ -8,6 +8,105 @@ namespace SP.DSA.Project.LinkedList
 {
     public class LinkedListUtility
     {
+        public LinkNode intersectin(LinkNode head1, LinkNode head2)
+        {
+            LinkNode l1 = head1, l2 = head2;
+            while (l1 != l2)
+            {
+                l1 = l1 != null ? l1.Next : head2;
+                l2 = l2 != null ? l2.Next : head1;
+            }
+            return l1;
+        }
+
+        public void DetectAndRemoveLoop(LinkNode head)
+        {
+            if (head == null && head.Next == null)
+            {
+                return;
+            }
+
+            LinkNode slow = head;
+            LinkNode fast = head;
+            bool isLoop = false;
+
+            while (fast != null && fast.Next != null)
+            {
+                fast = fast.Next.Next;
+                slow = slow.Next;
+                if (fast == slow)
+                {
+                    isLoop = true;
+                    break;
+                }
+            }
+
+            if (isLoop)
+            {
+                slow = head;
+                while (slow.Next != fast.Next)
+                {
+                    slow = slow.Next;
+                    fast = fast.Next;
+                }
+                fast.Next = null;
+            }
+        }
+        public static void MergeTwoSorted()
+        {
+            LinkNode h1 = null;
+            LinkNode h2 = null;
+            LinkNode merged = MergeSorted(h1, h2);
+        }
+
+        private static LinkNode MergeSortedRecursion(LinkNode h1, LinkNode h2)
+        {
+            if (h1 == null) return h2;
+            if (h2 == null) return h1;
+            if (h1.Val <= h2.Val)
+            {
+                h1.Next = MergeSortedRecursion(h1.Next, h2);
+                return h1;
+            }
+            else
+            {
+                h2.Next = MergeSortedRecursion(h1, h2.Next);
+                return h2;
+            }
+        }
+        private static LinkNode MergeSorted(LinkNode h1, LinkNode h2)
+        {
+            LinkNode dummyHead = new LinkNode(0);
+            LinkNode curr = dummyHead;
+            while (h1 != null && h2 != null)
+            {
+                if (h1 == null)
+                {
+                    curr.Next = h2;
+                    break;
+                }
+                if (h2 == null)
+                {
+                    curr.Next = h1;
+                    break;
+                }
+
+                if (h1.Val <= h2.Val)
+                {
+                    curr.Next = h1;
+                    h1 = h1.Next;
+                }
+                else
+                {
+                    curr.Next = h2;
+                    h2 = h2.Next;
+                }
+
+                curr = curr.Next;
+            }
+            return dummyHead.Next;
+        }
+
         public static void LinkedListUtilityDemo()
         {
             AdditionOfTwoListDemo();

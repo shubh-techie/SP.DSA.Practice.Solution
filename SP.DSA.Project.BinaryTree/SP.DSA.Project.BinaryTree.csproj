@@ -44,10 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BFSTraversalUtility.cs" />
+    <Compile Include="BinaryTreeDemo.cs" />
+    <Compile Include="BinaryTreeDemoUtility.cs" />
+    <Compile Include="BinaryTreeSolutionSetOne.cs" />
     <Compile Include="BTCoreUtility.cs" />
     <Compile Include="DFSTraversalUtility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerializeAndDeserializeBinaryTree.cs" />
     <Compile Include="TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>

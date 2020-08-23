@@ -8,6 +8,43 @@ namespace SP.DSA.Project.BinaryTree
 {
     public class BTCoreUtility
     {
+
+        public static IList<IList<int>> LevelOrder(TreeNode root)
+        {
+            IList<IList<int>> result = new List<IList<int>>();
+            if (root == null) return result;
+            Helper(root, result);
+            return result;
+        }
+        public static void Helper(TreeNode root, IList<IList<int>> result)
+        {
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            queue.Enqueue(root);
+            TreeNode temp = null;
+            int level = 0;
+            while (queue.Count > 0)
+            {
+                level++;
+                int size = queue.Count;
+                for (int i = 0; i < size; i++)
+                {
+                    temp = queue.Dequeue();
+                    if (temp != null)
+                    {
+                        if (temp.Left != null)
+                            queue.Enqueue(temp.Left);
+                        if (temp.Right != null)
+                            queue.Enqueue(temp.Right);
+
+                        if (i == 0)
+                            result.Add(new List<int>() { root.Data });
+                        else
+                            result[level].Add(root.Data);
+                    }
+                }
+            }
+        }
+
         public static void ConvertMirror(TreeNode root)
         {
             if (root == null) return;

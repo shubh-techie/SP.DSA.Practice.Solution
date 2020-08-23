@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="CycleInDirectedGraph.cs" />
     <Compile Include="DeductCycleInGraph.cs" />
+    <Compile Include="GNode.cs" />
     <Compile Include="Graph.cs" />
+    <Compile Include="GraphUtility.cs" />
+    <Compile Include="MyDemoGraph.cs" />
     <Compile Include="NoOfIsLand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

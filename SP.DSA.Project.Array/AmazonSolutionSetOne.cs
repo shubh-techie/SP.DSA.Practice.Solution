@@ -10,6 +10,7 @@ namespace SP.DSA.Project.ArrayDemo
     {
         public static void AmazonSolutionSetOneDemo()
         {
+            MoveZeroToEnd();
             //ReplaceZeroWithFive();
             //ThirdLargestElement();
             //MaxandSecondMax();
@@ -17,8 +18,48 @@ namespace SP.DSA.Project.ArrayDemo
             //RotateAnArray();
             //IntersactionCount();
             //Rearrange();
-            MaxSumInCircularArray();
+            //MaxSumInCircularArray();
         }
+
+        private static void MoveZeroToEnd()
+        {
+            int[] arr = { 8, 9, 0, 1, 2, 0, 3 };
+            int n = arr.Length;
+
+            Console.Write("Original array: ");
+            Console.WriteLine(string.Join(" ", arr));
+
+            moveZerosToEnd(arr, n);
+
+            Console.Write("\nModified array: ");
+            Console.WriteLine(string.Join(" ", arr));
+
+        }
+
+        private static void moveZerosToEnd(int[] arr, int n)
+        {
+            int j = 0, i;
+            // Traverse the array. If arr[i]  
+            // is non-zero and arr[j] is zero, 
+            // then swap both the element 
+            for (i = 0; i < n; i++)
+            {
+                if (arr[i] != 0 && arr[j] == 0)
+                {
+                    Swap(arr, i, j);
+                }
+                if (arr[j] != 0)
+                    j += 1;
+            }
+        }
+
+        public static void Swap(int[] arr, int i, int j)
+        {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+
 
         private static void MaxSumInCircularArray()
         {

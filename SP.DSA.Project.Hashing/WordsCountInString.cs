@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace SP.DSA.Project.Hashing
@@ -29,6 +30,7 @@ namespace SP.DSA.Project.Hashing
                 }
             }
 
+            //input = Regex.Replace(input, "[^a-zA-Z]+", " ");
             string[] splitArray = sb.ToString().Split(' ');
 
             foreach (var word in splitArray)

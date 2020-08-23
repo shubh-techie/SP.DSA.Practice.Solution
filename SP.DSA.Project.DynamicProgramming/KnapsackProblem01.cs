@@ -32,7 +32,6 @@ namespace SP.DSA.Project.DynamicProgramming
             {
                 for (j = 0; j <= bagWeight; j++)
                 {
-                    Console.Write("{0} ", table[i, j]);
                     if (i == 0 || j == 0)
                         table[i, j] = 0;
                     else if (weights[i - 1] <= j)

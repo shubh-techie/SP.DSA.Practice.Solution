@@ -23,9 +23,15 @@ namespace SP.DSA.Project.Graph
 
         private static List<int> GetShortedPath(MyGraph graphObj, int source)
         {
-            List<int> path = new List<int>() { 0, 0, 0, 0 };
+            List<int> paths = new List<int>() { 0, 0, 0, 0 };
             Queue<int> queue = new Queue<int>();
             HashSet<int> visited = new HashSet<int>();
+            GetShortedPathHelper(graphObj, source, queue, visited, paths);
+            return paths;
+        }
+
+        private static void GetShortedPathHelper(MyGraph graphObj, int source, Queue<int> queue, HashSet<int> visited, List<int> paths)
+        {
             visited.Add(source);
             queue.Enqueue(source);
             while (queue.Count > 0)
@@ -35,13 +41,12 @@ namespace SP.DSA.Project.Graph
                 {
                     if (!visited.Contains(nVertex))
                     {
-                        path[nVertex] = path[pVertex] + 1;
+                        paths[nVertex] = paths[pVertex] + 1;
                         visited.Add(nVertex);
                         queue.Enqueue(nVertex);
                     }
                 }
             }
-            return path;
         }
     }
 }

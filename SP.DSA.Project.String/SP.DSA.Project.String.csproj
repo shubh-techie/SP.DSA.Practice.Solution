@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MatchBracket.cs" />
     <Compile Include="NaivePatternSearching.cs" />
     <Compile Include="NaiveSolutionPatternChange.cs" />
+    <Compile Include="NumberToStringConverstion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringBasics.cs" />

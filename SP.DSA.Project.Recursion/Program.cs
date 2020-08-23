@@ -10,6 +10,12 @@ namespace SP.DSA.Project.Recursion
     {
         static void Main(string[] args)
         {
+            FlatternDictionary.FlatternDictionaryDemo();
+
+
+
+            Console.WriteLine("Please enter to exit");
+            Console.ReadLine();
         }
     }
 }

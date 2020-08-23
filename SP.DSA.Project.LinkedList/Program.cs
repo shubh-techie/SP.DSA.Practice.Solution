@@ -10,11 +10,7 @@ namespace SP.DSA.Project.LinkedList
     {
         static void Main(string[] args)
         {
-
-
-            //updating for testing purpose
-
-
+            //Updating for testing purpose
             //LRUCacheDemo.LRUCacheDemoStart();
             //SingleLinkedListDemo.SingleLinkedListDemoStart();
             //DoubleLinkedListDemo.DoubleLinkedListDemoStart();

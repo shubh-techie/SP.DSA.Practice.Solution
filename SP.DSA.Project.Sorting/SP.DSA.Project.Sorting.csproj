@@ -49,6 +49,7 @@
     <Compile Include="FindingKthSmallestNumber.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="KthSmallest.cs" />
+    <Compile Include="MedianNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuickSorting.cs" />

@@ -10,10 +10,10 @@ namespace SP.DSA.Project.BackTracking
     {
         static void Main(string[] args)
         {
-            //Permutation.PermutationDemo();
-            //RatMaze.RatMazeDemo();
-
-
+            // Permutation.PermutationDemo();
+            // RatMaze.RatMazeDemo();
+            //SudokuProblem.SudokuProblemDemo();
+            QueenSolutionChess.QueenSolutionChessDemo();
 
 
             Console.WriteLine("Please enter to exit");
